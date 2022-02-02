@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Button } from "@/components";
+import { Button, Input, Header } from "@/components";
 
 const Home: NextPage = () => {
   return (
@@ -10,23 +10,18 @@ const Home: NextPage = () => {
         <meta name="description" content="Chic Vision - Page Principale" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Hello World</h1>
+      <Header />
+      <h1>
+        Hello World, <a href="#">link!</a>
+      </h1>
       <Button type="orange-primary">Click Me</Button>
       <Button type="orange-secondary">Click Me</Button>
       <Button type="dark-primary">Click Me</Button>
       <Button type="dark-secondary">Click Me</Button>
-      <input
-        type="text"
-        name="search"
-        className="cv-input header-search"
-        placeholder="Rechercher"
-      />
-      <input
-        type="text"
-        name="search"
-        className="cv-input search"
-        placeholder="Rechercher"
-      />
+      <Input type="header-search" name="search" placeholder="Rechercher" />
+      <Input type="main-search" name="search" placeholder="Rechercher" />
+      <Input type="textarea" name="content" placeholder="Type your story!" />
+      <Input type="email" name="email" placeholder="john@doe.com" />
     </div>
   );
 };

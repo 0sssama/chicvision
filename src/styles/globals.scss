@@ -50,7 +50,16 @@ body {
 	margin-bottom: 1.75rem;
 }
 
+a {
+	color: var(--main);
+	transition: color 400ms ease;
+	&:hover {
+		color: var(--main-light-700)
+	}
+}
+
 // Global Styles
 @import "button";
 @import "input";
 @import "flex";
+@import "header";

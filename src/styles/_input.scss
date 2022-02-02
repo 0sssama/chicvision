@@ -11,16 +11,20 @@
 	color: #BBB;
   }
 
-input {
+input, textarea {
 	background: none;
 	border: none;
 	outline: none;
 	&.cv-input {
-		padding: 0.5rem 1rem;
+		padding: 0.65rem 0.825rem;
 		border-radius: var(--border-radius);
 		font-weight: 300;
 		width: 100%;
+		font-size: 0.9rem;
+		transition: all	400ms	var(--transition);
+		border: 1px solid transparent;
 		&.header-search {
+			padding: 0.5rem 0.825rem;
 			padding-left: 2rem;
 			background-color: #EBEBEB;
 			background-image: url(/assets/search.svg);
@@ -31,25 +35,34 @@ input {
 			&:focus {
 				color: var(--gray-800);
 				background-image: none;
-				padding: 0.5rem 1rem;
+				padding: 0.5rem 0.825rem;
 				font-weight: 500;
 			}
 		}
 		&.search {
-			padding: 0.75rem 2.75rem;
+			padding: 0.825rem 2.75rem;
 			background-image: url(/assets/search.svg);
-			background-size: 20px;
+			background-size: 16px;
 			background-repeat: no-repeat;
-			background-position: 0.75rem center;
+			background-position: 1rem center;
 			color: var(--gray-400);
 			font-weight: 400;
 			font-size: 0.925rem;
-			border: 2px solid var(--gray-200);
 			border-radius: 6px;
-			box-shadow: var(--shadow);
+			box-shadow: var(--shadow-xl);
 			&:focus {
+				box-shadow: var(--shadow-md);
 				color: var(--gray-800);
-				border-color: var(--gray-600);
+				border-color: var(--gray-300);
+			}
+		}
+		&.textarea, &.std {
+			border-color: var(--gray-300);
+			box-shadow: var(--shadow-none);
+			font-weight: 400;
+			&:focus {
+				border-color: var(--main);
+				box-shadow: var(--shadow-orange-sm);
 			}
 		}
 	}
