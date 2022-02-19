@@ -24,19 +24,19 @@ input, textarea {
 		transition: all	400ms	var(--transition);
 		border: 1px solid transparent;
 		&.header-search {
-			padding: 0.5rem 0.825rem;
+			padding: 0.35rem 0.825rem;
 			padding-left: 2rem;
-			background-color: #EBEBEB;
+			background-color: #eee;
 			background-image: url(/assets/search.svg);
-			background-size: 16px;
+			background-size: 14px;
 			background-repeat: no-repeat;
-			background-position: 0.5rem center;
+			background-position: 0.7rem center;
 			color: var(--gray-400);
 			&:focus {
 				color: var(--gray-800);
 				background-image: none;
-				padding: 0.5rem 0.825rem;
-				font-weight: 500;
+				padding: 0.35rem 0.825rem;
+				font-weight: 400;
 			}
 		}
 		&.search {

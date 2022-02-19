@@ -17,13 +17,14 @@ function index({
   readOnly,
   disabled,
   required,
+  className,
 }: Props) {
   switch (type) {
     case "header-search":
       return (
         <input
           type="text"
-          className="cv-input header-search"
+          className={`cv-input header-search ${className}`}
           placeholder={placeholder}
           readOnly={readOnly}
           disabled={disabled}
@@ -33,7 +34,7 @@ function index({
       return (
         <input
           type="text"
-          className="cv-input search"
+          className={`cv-input search ${className}`}
           placeholder={placeholder}
           readOnly={readOnly}
           disabled={disabled}
@@ -42,7 +43,7 @@ function index({
     case "textarea":
       return (
         <textarea
-          className="cv-input textarea"
+          className={`cv-input textarea ${className}`}
           name={name}
           placeholder={placeholder}
           readOnly={readOnly}
@@ -53,7 +54,7 @@ function index({
     default:
       return (
         <input
-          className="cv-input std"
+          className={`cv-input std ${className}`}
           type={type}
           name={name}
           placeholder={placeholder}

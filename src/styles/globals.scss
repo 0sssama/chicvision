@@ -12,7 +12,10 @@
 
 // UIcons
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
+@import "breakpoints";
 @import "vars";
 
 * {
@@ -55,6 +58,36 @@ a {
 	transition: color 400ms ease;
 	&:hover {
 		color: var(--main-light-700)
+	}
+}
+
+.padding-x {
+	--padding-x: 2rem;
+	@include mobile {
+		--padding-x: 1rem;
+	}
+	@include tablet {
+		--padding-x: 5rem;
+	}
+	@include desktop {
+		--padding-x: 12rem;
+	}
+	@include hugeScreens {
+		--padding-x: 30%;
+	}
+	padding-left: var(--padding-x);
+	padding-right: var(--padding-x);
+}
+
+.hide-for-mobile {
+	@include notDesktop {
+		display: none!important;
+	}
+}
+
+.hide-for-desktop {
+	@include tablet {
+		display: none!important;
 	}
 }
 
