@@ -4,10 +4,10 @@ button {
 	border: none;
 	cursor: pointer;
 	&.cv-button {
-		padding: .65rem 2.25rem;
-		transition: background-color	400ms	var(--transition),
-					box-shadow			400ms	var(--transition),
-					border-color		400ms	var(--transition);
+		padding: .65rem 1.5rem;
+		transition: background-color	600ms	var(--transition),
+					box-shadow			600ms	var(--transition),
+					border-color		600ms	var(--transition);
 		border-radius: var(--border-radius);
 		font-weight: 500;
 		font-size: 0.925rem;

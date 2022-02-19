@@ -72,8 +72,8 @@
 	--shadow-none: 0 0 #0000;
 	--shadow-orange-sm: 0px 0px 2px var(--main-opacity-9);
 	--shadow-orange: 10px 2px 30px var(--main-opacity-6);
-	--shadow-orange-hover: 2px 2px 30px var(--main-opacity-6);
+	--shadow-orange-hover: 0px 0px 30px var(--main-opacity-6);
 	--shadow-dark: 10px 2px 30px rgba(0, 0, 0, 0.4);
-	--shadow-dark-hover: 2px 2px 30px rgba(0, 0, 0, 0.4);
+	--shadow-dark-hover: 0px 0px 30px rgba(0, 0, 0, 0.4);
 	--transition: cubic-bezier(.59,0,.06,1);
 }
