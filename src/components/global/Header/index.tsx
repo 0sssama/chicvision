@@ -6,8 +6,8 @@ type Props = {};
 
 function index({}: Props) {
   return (
-    <header className="padding-x">
-      <div className="header-content flex items-center justify-between">
+    <header>
+      <div className="header-content flex items-center justify-between padding-x">
         <Logo />
         <Input
           type="header-search"

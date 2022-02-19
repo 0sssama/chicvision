@@ -1,3 +1,10 @@
+/*
+	DEV NOTE :
+	This file has all flex properties as classNames,
+	We  do  this  to   save   time  and  performance 
+	(and css lines) in development.
+*/
+
 .flex {
 	display: flex;
 }

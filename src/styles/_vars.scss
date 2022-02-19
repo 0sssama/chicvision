@@ -58,6 +58,7 @@
 	--dark-opacity-7: rgba(0, 0, 0, 0.7);
 	--dark-opacity-8: rgba(0, 0, 0, 0.8);
 	--dark-opacity-9: rgba(0, 0, 0, 0.9);
+	--success: rgb(42, 202, 74);
 	--danger: rgb(212, 51, 78);
 	--caution: rgb(248, 223, 82);
 	/*			GLOBAL VALUES		*/
@@ -76,4 +77,14 @@
 	--shadow-dark: 10px 2px 30px rgba(0, 0, 0, 0.4);
 	--shadow-dark-hover: 0px 0px 30px rgba(0, 0, 0, 0.4);
 	--transition: cubic-bezier(.59,0,.06,1);
+	--padding-x: 2rem;
+	@include mobile {
+		--padding-x: 2.25rem;
+	}
+	@include tablet {
+		--padding-x: 3rem;
+	}
+	@include hugeScreens {
+		--padding-x: 3rem;
+	}
 }
