@@ -72,6 +72,15 @@
 	line-height: 1.75;
 	color: var(--gray-900);
 	text-align: justify;
+	span.orange {
+		color: var(--main);
+	}
+	span.bold {
+		font-weight: 600;
+	}
+	span.italic {
+		font-style: italic;
+	}
 }
 
 .sub-title {

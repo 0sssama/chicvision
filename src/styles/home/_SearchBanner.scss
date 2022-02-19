@@ -1,0 +1,30 @@
+.SearchBanner {
+	height: 500px;
+	@include tablet {
+		height: 600px;
+	}
+	@include desktop {
+		height: 600px;
+	}
+	@include hugeScreens	{
+		height: 500px;
+	}
+	&-content {
+		row-gap: 1.75rem;
+		.titles, .titles *, .texts, .texts * {
+			text-align: center;
+		}
+		.texts {
+			margin-bottom: 1rem;
+			@include tablet {
+				max-width: 75%;
+			}
+			@include desktop {
+				max-width: 60%;
+			}
+		}
+		.input {
+			max-width: 60%;
+		}
+	}
+}

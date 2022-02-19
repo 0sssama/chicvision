@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Button, Input, Header } from "@/components";
+import { Header } from "@/components";
+import { SearchBanner } from "@/components/home";
 
 const Home: NextPage = () => {
   return (
@@ -10,16 +11,8 @@ const Home: NextPage = () => {
         <meta name="description" content="Chic Vision - Page Principale" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <div className="wrapper flex flex-col justify-start padding-x">
-        <Input
-          type="text"
-          HTMLtype="text"
-          placeholder="Your name here..."
-          required={true}
-          name="name"
-          label="Your name:"
-        />
+        <SearchBanner />
       </div>
     </div>
   );

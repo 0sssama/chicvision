@@ -63,6 +63,7 @@
 		}
 		&.search {
 			padding: 0.825rem 2.75rem;
+			padding-right: 0.75rem;
 			background-image: url(/assets/search.svg);
 			background-size: 16px;
 			background-repeat: no-repeat;
@@ -70,13 +71,12 @@
 			color: var(--gray-400);
 			font-weight: 400;
 			font-size: 0.925rem;
-			border-radius: 6px;
 			box-shadow: var(--shadow-xl);
 			border-color: var(--gray-200);
 			&:focus {
 				box-shadow: var(--shadow-md);
 				color: var(--gray-800);
-				border-color: var(--gray-500);
+				border-color: var(--main-light-500);
 			}
 		}
 		&.textarea, &.std {
