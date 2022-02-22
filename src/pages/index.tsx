@@ -1,9 +1,18 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Header } from "@/components";
 import { SearchBanner } from "@/components/home";
+import { GridLayout, Brand } from "@/components";
+import { useState } from "react";
+import { InferGetStaticPropsType, GetStaticProps } from "next";
+import { server } from "@/config";
+import { brandType } from "@/interfaces";
 
-const Home: NextPage = () => {
+const Home: NextPage = ({
+  brands,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
+  // search input
+  const [search, setSearch] = useState("");
+
   return (
     <div>
       <Head>
@@ -12,10 +21,27 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="wrapper flex flex-col justify-start padding-x">
-        <SearchBanner />
+        <SearchBanner search={search} setSearch={setSearch} />
+        <GridLayout>
+          {brands.map((brand: brandType, i: number) => (
+            <Brand data={brand} key={i} />
+          ))}
+        </GridLayout>
       </div>
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const response = await fetch(`${server}/api/brands`);
+
+  const brands = await response.json();
+
+  return {
+    props: {
+      brands: await brands,
+    },
+  };
 };
 
 export default Home;

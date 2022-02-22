@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Gucci",
+		"products": 108,
+		"image": "/assets/brands/gucci.jpeg"
+	},
+	{
+		"name": "Celine",
+		"products": 18,
+		"image": "/assets/brands/celine.jpeg"
+	},
+	{
+		"name": "Ray-Ban",
+		"products": 33,
+		"image": "/assets/brands/rayban.jpeg"
+	},
+	{
+		"name": "Dior",
+		"products": 12,
+		"image": "/assets/brands/dior.jpeg"
+	},
+	{
+		"name": "Tom Ford",
+		"products": 8,
+		"image": "/assets/brands/tom-ford.jpeg"
+	},
+	{
+		"name": "Persol",
+		"products": 108,
+		"image": "/assets/brands/persol.jpeg"
+	},
+	{
+		"name": "Summae",
+		"products": 78,
+		"image": "/assets/brands/summae.jpeg"
+	},
+	{
+		"name": "Carrera",
+		"products": 67,
+		"image": "/assets/brands/carrera.jpeg"
+	}
+]

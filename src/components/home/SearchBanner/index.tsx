@@ -1,8 +1,12 @@
 import { Input } from "@/components";
+import { Dispatch, SetStateAction, ChangeEvent } from "react";
 
-type Props = {};
+type Props = {
+  search: string;
+  setSearch: Dispatch<SetStateAction<string>>;
+};
 
-function SearchBanner({}: Props) {
+function SearchBanner({ search, setSearch }: Props) {
   return (
     <div className="SearchBanner w-full flex items-center justify-center">
       <div className="SearchBanner-content flex flex-col items-center">
@@ -21,6 +25,10 @@ function SearchBanner({}: Props) {
         <Input
           type="main-search"
           placeholder="Rechercher les marques, produits..."
+          value={search}
+          onChange={(e: ChangeEvent<HTMLInputElement>) =>
+            setSearch(e.target.value)
+          }
         />
       </div>
     </div>
