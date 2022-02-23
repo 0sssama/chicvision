@@ -6,7 +6,7 @@ function Logo({}: Props) {
   return (
     <Link href="/">
       <a className="logo flex items-center justify-start">
-        <img src="/assets/logo_dark.svg" alt="Chic Vision" />
+        <img src="/assets/logo_dark.svg" alt="Chic Vision" className="w-full" />
       </a>
     </Link>
   );

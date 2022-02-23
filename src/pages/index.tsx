@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { SearchBanner } from "@/components/home";
-import { GridLayout, Brand } from "@/components";
+import { GridLayout, Brand, Footer } from "@/components";
 import { useState } from "react";
 import { InferGetStaticPropsType, GetStaticProps } from "next";
 import { server } from "@/config";
@@ -14,7 +14,7 @@ const Home: NextPage = ({
   const [search, setSearch] = useState("");
 
   return (
-    <div>
+    <div className="w-full">
       <Head>
         <title>Chic Vision</title>
         <meta name="description" content="Chic Vision - Page Principale" />
@@ -28,6 +28,7 @@ const Home: NextPage = ({
           ))}
         </GridLayout>
       </div>
+      <Footer />
     </div>
   );
 };

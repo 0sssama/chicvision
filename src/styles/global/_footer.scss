@@ -1,0 +1,44 @@
+.Footer {
+	margin-top: 8rem;
+	.wrapper {
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&-carousel, &-bottom {
+		padding: 3.5rem 0;
+	}
+	&-carousel {
+		.title {
+			color: var(--gray-50);
+			margin-bottom: 2rem;
+		}
+		p {
+			color: var(--gray-50)
+		}
+		background-color: var(--main);
+	}
+	&-bottom {
+		.wrapper {
+			row-gap: 1.75rem;
+			.logo {
+				width: 12rem;
+			}
+			p.address {
+				line-height: 2.25;
+				font-weight: 500;
+			}
+			.social-media {
+				margin-bottom: 1.25rem;
+				column-gap: 1rem;
+			}
+			p.copyright {
+				font-size: 0.825rem;
+			}
+			color: var(--gray-900)
+		}
+	}
+}

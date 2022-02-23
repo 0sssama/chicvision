@@ -3,5 +3,6 @@ import Input from "./global/Input";
 import Header from "./global/Header";
 import GridLayout from "./global/GridLayout";
 import Brand from "./global/Brand";
+import Footer from "./global/Footer";
 
-export { Button, Input, Header, GridLayout, Brand };
+export { Button, Input, Header, GridLayout, Brand, Footer };
